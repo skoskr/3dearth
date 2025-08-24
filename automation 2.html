@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Auro.Automation • Auro.co</title>
+  <link rel="icon" href="data:," />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-route="automation">
+  <div id="entry-black" aria-hidden="true"></div>
+
+  <a class="back" href="index.html">← Ana sayfa</a>
+  <header class="site">
+    <a href="index.html"><img src="/img/auroco_logo.png" alt="logo" /></a>
+  </header>
+
+  <main class="wrap">
+    <h1>Auro.Automation</h1>
+    <div class="muted">Yapay zekâ ve RPA ile operasyonel verimlilik.</div>
+
+    <section class="grid">
+      <a class="card" href="automation-otomasyon.html">
+        <h3>Otomasyon</h3>
+        <p>Süreç keşfi, entegrasyon, bot’lar ve izleme.</p>
+      </a>
+    </section>
+
+    <div class="cta">
+      <a class="btn" href="iletisim.html">Demo Talep Et</a>
+      <a class="btn secondary" href="iletisim.html">Teknik Görüşme</a>
+    </div>
+  </main>
+
+  <script>
+    const eb = document.getElementById("entry-black");
+    requestAnimationFrame(() => {
+      eb.classList.add("fade-out");
+      eb.addEventListener("transitionend", () => eb.remove(), { once: true });
+    });
+  </script>
+</body>
+</html>

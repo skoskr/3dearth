@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Kişisel Gelişim • Auro.co</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-route="academy-kisisel">
+    <div id="entry-black" aria-hidden="true"></div>
+
+    <a class="back" href="index.html">← Ana sayfa</a>
+    <header class="site">
+      <a href="index.html"><img src="/img/auroco_logo.png" alt="logo" /></a>
+    </header>
+
+    <main class="wrap">
+      <h1>Kişisel Gelişim Programları</h1>
+      <div class="muted">
+        Kariyer ve yaşam hedeflerine uygun, pratik odaklı bireysel öğrenme.
+      </div>
+
+      <section class="grid">
+        <div class="card">
+          <h3>Üretkenlik & Zaman</h3>
+          <p>Odak, planlama ve alışkanlık sistemleri.</p>
+        </div>
+        <div class="card">
+          <h3>İletişim & Sunum</h3>
+          <p>Hikâyeleştirme, sahne hakimiyeti ve etkili ifade.</p>
+        </div>
+        <div class="card">
+          <h3>Dijital Yetkinlik</h3>
+          <p>AI araçlarıyla verimli çalışma, otomasyon temelleri.</p>
+        </div>
+        <div class="card">
+          <h3>Portföy & Kişisel Marka</h3>
+          <p>CV/portfolio düzeni, görünürlük ve sosyal varlık.</p>
+        </div>
+        <div class="card">
+          <h3>Koçluk Seansları</h3>
+          <p>1:1 hedef belirleme ve takip planları.</p>
+        </div>
+        <div class="card">
+          <h3>Topluluk</h3>
+          <p>Grup oturumları ve akran öğrenmesi.</p>
+        </div>
+      </section>
+
+      <div class="cta">
+        <a class="btn" href="iletisim.html">Programa Katıl</a>
+        <a class="btn secondary" href="iletisim.html">Danışmanlık Al</a>
+      </div>
+    </main>
+
+    <script>
+      const eb = document.getElementById("entry-black");
+      requestAnimationFrame(() => {
+        eb.classList.add("fade-out");
+        eb.addEventListener("transitionend", () => eb.remove(), { once: true });
+      });
+    </script>
+  </body>
+</html>

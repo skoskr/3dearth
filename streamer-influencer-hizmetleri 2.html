@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Streamer ve Influencer Hizmetleri • Auro.co</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-route="streamer-influencer-hizmetleri">
+    <div id="entry-black" aria-hidden="true"></div>
+
+    <a class="back" href="index.html">← Ana sayfa</a>
+    <header class="site">
+      <a href="index.html"><img src="/img/auroco_logo.png" alt="logo" /></a>
+    </header>
+
+    <main class="wrap">
+      <h1>Streamer ve Influencer Hizmetleri</h1>
+      <div class="muted">
+        Marka-hedef kitle eşleşmesi, iş birliği yönetimi ve performans takibi.
+      </div>
+
+      <section class="grid">
+        <div class="card">
+          <h3>Eşleşme</h3>
+          <p>Kitle/niş/kategori uyumuna göre seçim.</p>
+        </div>
+        <div class="card">
+          <h3>Yaratıcı Brif</h3>
+          <p>Format, hikâye ve mesaj mimarisi.</p>
+        </div>
+        <div class="card">
+          <h3>Sözleşme & Haklar</h3>
+          <p>Kullanım hakları, süre ve revizyonlar.</p>
+        </div>
+        <div class="card">
+          <h3>Yayın & Dağıtım</h3>
+          <p>Çoklu kanal yayını ve çapraz paylaşım.</p>
+        </div>
+        <div class="card">
+          <h3>Performans</h3>
+          <p>Link/kupon takibi, KPI’lar ve optimizasyon.</p>
+        </div>
+        <div class="card">
+          <h3>Raporlama</h3>
+          <p>Geri bildirim ve öğrenimler.</p>
+        </div>
+      </section>
+
+      <div class="cta">
+        <a class="btn" href="iletisim.html">Teklif Al</a>
+        <a class="btn secondary" href="iletisim.html">Case Study İste</a>
+      </div>
+    </main>
+
+    <script>
+      const eb = document.getElementById("entry-black");
+      requestAnimationFrame(() => {
+        eb.classList.add("fade-out");
+        eb.addEventListener("transitionend", () => eb.remove(), { once: true });
+      });
+    </script>
+  </body>
+</html>

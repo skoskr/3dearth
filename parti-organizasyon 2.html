@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Parti ve Organizasyon • Auro.co</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-route="parti-organizasyon">
+    <div id="entry-black" aria-hidden="true"></div>
+
+    <a class="back" href="index.html">← Ana sayfa</a>
+    <header class="site">
+      <a href="index.html"><img src="/img/auroco_logo.png" alt="logo" /></a>
+    </header>
+
+    <main class="wrap">
+      <h1>Parti ve Organizasyon</h1>
+      <div class="muted">
+        Kurumsal etkinlikler, lansmanlar, davetler ve sahne prodüksiyonları için
+        uçtan uca planlama.
+      </div>
+
+      <section class="grid">
+        <div class="card">
+          <h3>Planlama & Konsept</h3>
+          <p>Hedef, kitle ve bütçeye göre özgün konsept & akış tasarımı.</p>
+        </div>
+        <div class="card">
+          <h3>Mekan & Lojistik</h3>
+          <p>
+            Mekan seçimi, dekor, teknik ekipman, sahne ve ses-ışık
+            koordinasyonu.
+          </p>
+        </div>
+        <div class="card">
+          <h3>İçerik & Prodüksiyon</h3>
+          <p>Açılış filmleri, sahne yönetimi, canlı yayın ve kayıt.</p>
+        </div>
+        <div class="card">
+          <h3>Markalama</h3>
+          <p>
+            Görsel kimlik, basılı materyaller, yönlendirme ve sponsorluk
+            alanları.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Operasyon</h3>
+          <p>Ekip yönetimi, kurulum-söküm planı, acil durum senaryoları.</p>
+        </div>
+        <div class="card">
+          <h3>Raporlama</h3>
+          <p>Katılımcı geri bildirimleri, KPI’lar ve bütçe raporu.</p>
+        </div>
+      </section>
+
+      <div class="cta">
+        <a class="btn" href="iletisim.html">Teklif Al</a>
+        <a class="btn secondary" href="iletisim.html">Danışmanlık Talep Et</a>
+      </div>
+    </main>
+
+    <script>
+      const eb = document.getElementById("entry-black");
+      requestAnimationFrame(() => {
+        eb.classList.add("fade-out");
+        eb.addEventListener("transitionend", () => eb.remove(), { once: true });
+      });
+    </script>
+  </body>
+</html>

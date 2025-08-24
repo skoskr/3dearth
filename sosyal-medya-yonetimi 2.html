@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sosyal Medya Yönetimi • Auro.co</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-route="sosyal-medya-yonetimi">
+    <div id="entry-black" aria-hidden="true"></div>
+
+    <a class="back" href="index.html">← Ana sayfa</a>
+    <header class="site">
+      <a href="index.html"><img src="/img/auroco_logo.png" alt="logo" /></a>
+    </header>
+
+    <main class="wrap">
+      <h1>Sosyal Medya Yönetimi</h1>
+      <div class="muted">
+        Strateji, içerik üretimi, yayın planı ve performans optimizasyonu.
+      </div>
+
+      <section class="grid">
+        <div class="card">
+          <h3>Strateji</h3>
+          <p>Hedef kitle analizi, kanal seçimi ve içerik temaları.</p>
+        </div>
+        <div class="card">
+          <h3>İçerik Üretimi</h3>
+          <p>Metin, görsel, video; marka diliyle tutarlı üretim.</p>
+        </div>
+        <div class="card">
+          <h3>Takvim & Yayın</h3>
+          <p>Haftalık/aylık planlar, çoklu kanal yönetimi.</p>
+        </div>
+        <div class="card">
+          <h3>Topluluk</h3>
+          <p>Yorum/DM yönetimi, kriz iletişimi rehberi.</p>
+        </div>
+        <div class="card">
+          <h3>Reklam</h3>
+          <p>Hedefleme, bütçe optimizasyonu ve A/B testleri.</p>
+        </div>
+        <div class="card">
+          <h3>Raporlama</h3>
+          <p>KPI’lar, öğrenimler ve sonraki adımlar.</p>
+        </div>
+      </section>
+
+      <div class="cta">
+        <a class="btn" href="iletisim.html">Teklif Al</a>
+        <a class="btn secondary" href="iletisim.html"
+          >Performans Raporu Örneği</a
+        >
+      </div>
+    </main>
+
+    <script>
+      const eb = document.getElementById("entry-black");
+      requestAnimationFrame(() => {
+        eb.classList.add("fade-out");
+        eb.addEventListener("transitionend", () => eb.remove(), { once: true });
+      });
+    </script>
+  </body>
+</html>
