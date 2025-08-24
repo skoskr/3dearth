@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Otomasyon • Auro.co</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-route="automation-otomasyon">
+    <div id="entry-black" aria-hidden="true"></div>
+
+    <a class="back" href="index.html">← Ana sayfa</a>
+    <header class="site">
+      <a href="index.html"><img src="/img/auroco_logo.png" alt="logo" /></a>
+    </header>
+
+    <main class="wrap">
+      <h1>Otomasyon</h1>
+      <div class="muted">
+        İş akışlarınızı hızlandıran, hatayı azaltan ve verimi artıran yapay zekâ otomasyonları.
+      </div>
+
+      <section class="grid">
+        <div class="card">
+          <h3>Süreç Keşfi</h3>
+          <p>Manuel adımların haritalanması, otomasyon ROI analizi.</p>
+        </div>
+        <div class="card">
+          <h3>Entegrasyon</h3>
+          <p>CRM, ERP, biletleme ve iletişim araçlarıyla uçtan uca bağlama.</p>
+        </div>
+        <div class="card">
+          <h3>Bot & RPA</h3>
+          <p>Veri çekme, sınıflandırma, bildirim ve raporlama botları.</p>
+        </div>
+        <div class="card">
+          <h3>AI Asistanlar</h3>
+          <p>Müşteri destek, satış öncesi ve iç iletişim için özel asistanlar.</p>
+        </div>
+        <div class="card">
+          <h3>Güvenlik & Yetkilendirme</h3>
+          <p>Kimlik yönetimi, loglama ve erişim kontrolleri.</p>
+        </div>
+        <div class="card">
+          <h3>Bakım & İzleme</h3>
+          <p>Performans izleme, hata ayıklama ve sürekli iyileştirme.</p>
+        </div>
+      </section>
+
+      <div class="cta">
+        <a class="btn" href="iletisim.html">Demo Talep Et</a>
+        <a class="btn secondary" href="iletisim.html">Teknik Görüşme</a>
+      </div>
+    </main>
+
+    <script>
+      const eb = document.getElementById("entry-black");
+      requestAnimationFrame(() => {
+        eb.classList.add("fade-out");
+        eb.addEventListener("transitionend", () => eb.remove(), { once: true });
+      });
+    </script>
+  </body>
+</html>

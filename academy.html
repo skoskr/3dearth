@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Auro.Academy • Auro.co</title>
+  <link rel="icon" href="data:," />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-route="academy">
+  <div id="entry-black" aria-hidden="true"></div>
+
+  <a class="back" href="index.html">← Ana sayfa</a>
+  <header class="site">
+    <a href="index.html"><img src="/img/auroco_logo.png" alt="logo" /></a>
+  </header>
+
+  <main class="wrap">
+    <h1>Auro.Academy</h1>
+    <div class="muted">Kişisel ve kurumsal gelişim için yapılandırılmış eğitim programları.</div>
+
+    <section class="grid">
+      <a class="card" href="academy-kurumsal.html">
+        <h3>Kurumsal Eğitim</h3>
+        <p>Ekipler için hedef odaklı, ölçülebilir müfredatlar.</p>
+      </a>
+      <a class="card" href="academy-kisisel.html">
+        <h3>Kişisel Gelişim</h3>
+        <p>Bireyler için koçluk, üretkenlik ve dijital yetkinlik.</p>
+      </a>
+    </section>
+
+    <div class="cta">
+      <a class="btn" href="iletisim.html">Program Planla</a>
+      <a class="btn secondary" href="iletisim.html">Bilgi Al</a>
+    </div>
+  </main>
+
+  <script>
+    const eb = document.getElementById("entry-black");
+    requestAnimationFrame(() => {
+      eb.classList.add("fade-out");
+      eb.addEventListener("transitionend", () => eb.remove(), { once: true });
+    });
+  </script>
+</body>
+</html>

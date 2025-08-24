@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vizyon & Misyon • Auro.co</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-route="vizyon-misyon">
+    <div id="entry-black" aria-hidden="true"></div>
+
+    <a class="back" href="index.html">← Ana sayfa</a>
+    <header class="site">
+      <a href="index.html"><img src="/img/auroco_logo.png" alt="logo" /></a>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <span class="badge">Auro.co</span>
+        <h1>Vizyon & Misyon</h1>
+        <p>
+          İnsan odaklı tasarım ve teknolojiyi birleştirerek, markalara sürdürülebilir
+          büyüme sağlayan deneyimler üretmek.
+        </p>
+      </section>
+
+      <section class="grid">
+        <div class="card" style="grid-column: span 12;">
+          <h3>Vizyon</h3>
+          <p>
+            Yenilikçi deneyim tasarımlarıyla bölgesel ölçekte örnek gösterilen,
+            veriyle beslenen yaratıcı bir ekosistem olmak.
+          </p>
+        </div>
+        <div class="card" style="grid-column: span 6;">
+          <h3>Misyon</h3>
+          <p>
+            Strateji, dizayn ve teknolojiyi entegre ederek iş hedeflerine doğrudan
+            etki eden, ölçülebilir sonuçlar üretmek.
+          </p>
+        </div>
+        <div class="card" style="grid-column: span 6;">
+          <h3>Değerler</h3>
+          <p>
+            Şeffaflık, hız, kalite, kullanıcı odaklılık ve sürekli gelişim.
+          </p>
+        </div>
+      </section>
+
+      <section class="timeline">
+        <div class="step">
+          <div class="dot"></div>
+          <div>
+            <h4>Keşif & Strateji</h4>
+            <p>İş hedefleri ve kullanıcı ihtiyaçlarını aynı masaya alırız.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="dot"></div>
+          <div>
+            <h4>Tasarım & Üretim</h4>
+            <p>Çevik ve iteratif süreçle, içgörüleri somut ürünlere dönüştürürüz.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="dot"></div>
+          <div>
+            <h4>Yayın & Ölçüm</h4>
+            <p>Sonuçları veriyle takip eder, gelişim döngüsünü kapatırız.</p>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <span class="muted">Auro.co</span>
+        <a class="cta" href="iletisim.html">İletişim</a>
+      </footer>
+    </main>
+
+    <script>
+      const eb = document.getElementById("entry-black");
+      requestAnimationFrame(() => {
+        eb.classList.add("fade-out");
+        eb.addEventListener("transitionend", () => eb.remove(), { once: true });
+      });
+    </script>
+  </body>
+</html>
